@@ -1,0 +1,20 @@
+2025-09-30 16:21:43.7610|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-09-30 16:21:43.7960|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-09-30 16:21:44.0130|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-09-30 16:21:44.0130|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-09-30 16:21:44.1860|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-09-30 16:21:44.1860|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-09-30 17:22:11.2106|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-09-30 17:22:11.2326|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-09-30 17:22:11.4336|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-09-30 17:22:11.4336|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-09-30 17:22:11.5906|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-09-30 17:22:11.5906|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-09-30 18:34:43.9090|INFO|com.barraider.spotify|493|Disconnect event received
+2025-09-30 18:34:43.9090|INFO|com.barraider.spotify|1|Plugin Disconnected - Exiting
+2025-09-30 18:34:52.8360|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-09-30 18:34:52.8690|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-09-30 18:34:53.0460|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-09-30 18:34:53.0460|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-09-30 18:34:53.1420|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-09-30 18:34:53.1440|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized

@@ -1,0 +1,26 @@
+2025-10-03 12:59:07.0765|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-03 12:59:07.1095|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-03 12:59:07.4155|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-03 12:59:07.4155|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-03 12:59:07.5675|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-03 12:59:07.5675|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-03 13:57:49.1658|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-03 13:57:49.1888|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-03 13:57:49.7468|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-03 13:57:49.7468|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-03 13:57:50.4448|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-03 13:57:50.4448|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-03 14:13:55.7436|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-03 14:13:55.7676|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-03 14:13:55.9146|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-03 14:13:55.9146|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-03 14:13:56.0086|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-03 14:13:56.0086|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-03 14:20:07.0813|INFO|com.barraider.spotify|46|Disconnect event received
+2025-10-03 14:20:07.0813|INFO|com.barraider.spotify|1|Plugin Disconnected - Exiting
+2025-10-03 14:22:45.1492|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-03 14:22:45.1732|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-03 14:22:45.3202|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-03 14:22:45.3212|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-03 14:22:45.4112|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-03 14:22:45.4112|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
