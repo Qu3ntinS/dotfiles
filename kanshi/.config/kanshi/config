@@ -1,0 +1,11 @@
+profile docked-home {
+    output eDP-1 disable
+
+    output DP-10 mode 1920x1080@120 position 0,-420 transform 90
+    output DP-9  mode 1920x1080@120 position 1080,0
+    output DP-8  mode 1920x1080@120 position 3000,0
+}
+
+profile undocked {
+    output eDP-1 enable mode 1920x1200@60 position 0,0
+}
