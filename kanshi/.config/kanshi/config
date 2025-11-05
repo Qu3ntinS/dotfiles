@@ -1,3 +1,20 @@
+profile docked-office {
+    output "LG Electronics LG HDR 4K 0x00070A1A" {
+        mode 1920x1080@60 
+        transform 90
+        position 0,-100
+    } 
+    output "LG Electronics LG HDR 4K 0x0002257F" {
+        mode 1920x1080@60 
+        position 1080,448
+    } 
+    output "LG Electronics LG HDR 4K 0x00022578" {
+        mode 1920x1080@60
+        position 3000,448
+    } 
+    output eDP-1 disable
+}
+
 profile docked-home {
     output eDP-1 disable
 
