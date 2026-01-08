@@ -1,6 +1,18 @@
-2025-10-02 22:42:56.8165|DEBUG|com.barraider.spotify|1|Logger Initialized
-2025-10-02 22:42:56.8535|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
-2025-10-02 22:42:58.0121|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
-2025-10-02 22:42:58.0121|INFO|com.barraider.spotify|1|Connecting to Stream Deck
-2025-10-02 22:42:58.5099|INFO|com.barraider.spotify|1|Connected to Stream Deck
-2025-10-02 22:42:58.5099|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-12-29 02:58:03.0566|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-12-29 02:58:03.1246|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-12-29 02:58:03.4446|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-12-29 02:58:03.4446|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-12-29 02:58:03.6506|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-12-29 02:58:03.6536|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-12-29 03:29:32.1016|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-12-29 03:29:32.1326|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-12-29 03:29:32.3186|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-12-29 03:29:32.3196|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-12-29 03:29:32.4406|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-12-29 03:29:32.4426|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-12-29 03:32:09.5774|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-12-29 03:32:09.6224|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-12-29 03:32:09.9364|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-12-29 03:32:09.9374|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-12-29 03:32:10.1074|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-12-29 03:32:10.1104|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
