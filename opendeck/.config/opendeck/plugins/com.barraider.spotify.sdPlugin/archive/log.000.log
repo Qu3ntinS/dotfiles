@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-12-29 02:58:03.0566|DEBUG|com.barraider.spotify|1|Logger Initialized
 2025-12-29 02:58:03.1246|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
 2025-12-29 02:58:03.4446|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
@@ -16,3 +17,29 @@
 2025-12-29 03:32:09.9374|INFO|com.barraider.spotify|1|Connecting to Stream Deck
 2025-12-29 03:32:10.1074|INFO|com.barraider.spotify|1|Connected to Stream Deck
 2025-12-29 03:32:10.1104|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+=======
+2025-10-08 21:11:37.3757|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-08 21:11:37.4187|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-08 21:11:37.6827|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-08 21:11:37.6827|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-08 21:11:38.0867|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-08 21:11:38.0867|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-08 21:33:30.7617|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-08 21:33:30.7857|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-08 21:33:31.2167|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-08 21:33:31.2167|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-08 21:33:31.5537|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-08 21:33:31.5537|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-08 21:45:41.4828|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-08 21:45:41.5068|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-08 21:45:43.0018|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-08 21:45:43.0028|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-08 21:45:44.0768|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-08 21:45:44.0768|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+2025-10-08 22:05:10.2166|DEBUG|com.barraider.spotify|1|Logger Initialized
+2025-10-08 22:05:10.2386|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2025-10-08 22:05:10.7405|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2025-10-08 22:05:10.7415|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2025-10-08 22:05:11.2425|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2025-10-08 22:05:11.2435|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+>>>>>>> f0104d0 (opendeck)

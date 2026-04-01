@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 2026-01-08T08:25:01.388Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+=======
+2026-04-01T21:07:38.183Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+>>>>>>> f0104d0 (opendeck)

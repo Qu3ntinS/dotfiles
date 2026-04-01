@@ -202,7 +202,11 @@
           "show": true,
           "size": 12,
           "style": "Regular",
+<<<<<<< HEAD
           "text": "3:58:18 PM",
+=======
+          "text": "10:26:20 PM",
+>>>>>>> f0104d0 (opendeck)
           "underline": false
         }
       ]
@@ -293,7 +297,7 @@
           "alignment": "middle",
           "colour": "#FFFFFF",
           "family": "Liberation Sans",
-          "image": "0.jpeg",
+          "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/playpause.png",
           "name": "",
           "show": true,
           "size": 16,

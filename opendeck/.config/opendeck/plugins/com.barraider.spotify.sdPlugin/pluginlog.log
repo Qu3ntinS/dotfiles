@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 2026-01-08 09:25:05.2700|DEBUG|com.barraider.spotify|1|Logger Initialized
 2026-01-08 09:25:05.3160|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
 2026-01-08 09:25:05.5170|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
 2026-01-08 09:25:05.5170|INFO|com.barraider.spotify|1|Connecting to Stream Deck
 2026-01-08 09:25:05.6610|INFO|com.barraider.spotify|1|Connected to Stream Deck
 2026-01-08 09:25:05.6630|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+=======
+2026-04-01 23:08:58.8650|DEBUG|com.barraider.spotify|1|Logger Initialized
+2026-04-01 23:08:58.8990|INFO|com.barraider.spotify|1|Plugin [com.barraider.spotify] Loading - 16 Actions Found
+2026-04-01 23:08:59.1370|INFO|com.barraider.spotify|1|Plugin version: 2.9.1
+2026-04-01 23:08:59.1370|INFO|com.barraider.spotify|1|Connecting to Stream Deck
+2026-04-01 23:08:59.2300|INFO|com.barraider.spotify|1|Connected to Stream Deck
+2026-04-01 23:08:59.2310|INFO|com.barraider.spotify|1|GlobalSettingsManager initialized
+>>>>>>> f0104d0 (opendeck)
+2026-04-01 23:22:31.1809|INFO|com.barraider.spotify|1|Plugin Disconnected - Exiting

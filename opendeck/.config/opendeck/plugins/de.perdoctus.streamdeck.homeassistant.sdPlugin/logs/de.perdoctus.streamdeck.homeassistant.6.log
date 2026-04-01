@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-12-10T08:21:27.604Z ERROR Failed to download updated active-states.json 
 Error: getaddrinfo EAI_AGAIN cdn.jsdelivr.net
     at hC.from (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:35314)
@@ -29,3 +30,6 @@ Error: getaddrinfo EAI_AGAIN cdn.jsdelivr.net
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
     at async vt.fetchActiveStates (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:53:820848)
 2025-12-10T08:21:27.629Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+=======
+2025-10-03T12:22:43.815Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+>>>>>>> f0104d0 (opendeck)
