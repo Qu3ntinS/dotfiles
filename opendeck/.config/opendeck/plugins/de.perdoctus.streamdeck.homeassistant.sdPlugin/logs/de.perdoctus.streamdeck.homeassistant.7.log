@@ -1,35 +1,5 @@
 <<<<<<< HEAD
-2025-12-09T08:28:18.980Z ERROR Failed to download updated active-states.json 
-Error: getaddrinfo EAI_AGAIN cdn.jsdelivr.net
-    at hC.from (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:35314)
-    at Z.<anonymous> (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:222609)
-    at Z.emit (node:events:508:28)
-    at Z.emit (node:domain:489:12)
-    at d.forEach.m.<computed> (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:203556)
-    at ClientRequest.emit (node:events:508:28)
-    at ClientRequest.emit (node:domain:489:12)
-    at emitErrorEvent (node:_http_client:108:11)
-    at TLSSocket.socketErrorListener (node:_http_client:575:5)
-    at TLSSocket.emit (node:events:508:28)
-    at wV.request (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:234691)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async vt.fetchActiveStates (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:53:820848)
-2025-12-09T08:28:18.996Z ERROR Failed to download updated active-states.json 
-Error: getaddrinfo EAI_AGAIN cdn.jsdelivr.net
-    at hC.from (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:35314)
-    at Z.<anonymous> (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:222609)
-    at Z.emit (node:events:508:28)
-    at Z.emit (node:domain:489:12)
-    at d.forEach.m.<computed> (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:203556)
-    at ClientRequest.emit (node:events:508:28)
-    at ClientRequest.emit (node:domain:489:12)
-    at emitErrorEvent (node:_http_client:108:11)
-    at TLSSocket.socketErrorListener (node:_http_client:575:5)
-    at TLSSocket.emit (node:events:508:28)
-    at wV.request (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:14:234691)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async vt.fetchActiveStates (file:///home/quentin/dotfiles/opendeck/.config/opendeck/plugins/de.perdoctus.streamdeck.homeassistant.sdPlugin/bin/plugin.js:53:820848)
-2025-12-09T08:28:19.005Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+2025-12-12T08:00:36.158Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
 =======
-2025-10-03T12:13:54.426Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
+2025-10-08T19:31:49.586Z INFO  No Home Assistant server URL or access token set, not connecting to Home Assistant.
 >>>>>>> f0104d0 (opendeck)
