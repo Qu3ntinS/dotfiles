@@ -2,12 +2,12 @@
   "autolaunch": true,
   "background": true,
   "brightness": 100,
-  "darktheme": true,
   "developer": false,
   "disableelgato": false,
   "language": "de",
+  "rotation": 0,
   "separatewine": false,
   "statistics": true,
   "updatecheck": false,
-  "version": "2.7.0"
+  "version": "2.10.1"
 }

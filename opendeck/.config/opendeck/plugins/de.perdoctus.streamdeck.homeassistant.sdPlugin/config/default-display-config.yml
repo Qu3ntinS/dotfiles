@@ -22,9 +22,12 @@
 
 _color: '#AAAAAA'
 _labelTemplates:
-  - ''
-  - ''
-  - '{{state}}{{unit_of_measurement}}'
+  - |
+    {% if (state | float('f')) == 'f' -%}
+      {{ state }}
+    {% else -%}
+      {{ state | round(2) }}{{unit_of_measurement}}
+    {% endif %}
 _states:
   unavailable:
     color: '#FF6F91'
@@ -52,14 +55,14 @@ _states:
   # =========================================================
 
 switch:
-  labelTemplates:
+  labelTemplates: []
   icon: mdi:toggle-switch-off
   states:
     on:
       icon: mdi:toggle-switch
 
 light:
-  labelTemplates:
+  labelTemplates: []
   icon: mdi:lightbulb
   color: '#888888'
   feedbackLayout: '$B1'
@@ -77,7 +80,7 @@ light:
       color: '#ffd484'
 
 input_boolean:
-  labelTemplates:
+  labelTemplates: []
   icon: mdi:toggle-switch-off
   states:
     on:
@@ -97,7 +100,7 @@ person:
       icon: mdi:account-arrow-right
 
 binary_sensor:
-  labelTemplates:
+  labelTemplates: []
   icon: mdi:radiobox-blank
   states:
     on:
@@ -136,6 +139,17 @@ cover:
 
 sensor:
   classes:
+    carbon_dioxide:
+      icon: mdi:molecule-co2
+      color: |
+        {% set numState = state | int %}
+        {% if numState <= 1000 %}
+          #00FF00
+        {% elif numState <= 2000 %}
+          #FFA500
+        {% else %}
+          #FF0000
+        {% endif %}
     humidity:
       icon: mdi:water-percent
       color: '#2C73D2'
@@ -245,8 +259,6 @@ sensor:
 
 weather:
   labelTemplates:
-    - ''
-    - ''
     - '{{temperature}}{{temperature_unit}}'
     - '{{humidity}}%'
   states:
@@ -310,3 +322,34 @@ lawn_mower:
       color: '#F9F871'
     returning:
       color: '#F9F871'
+
+fan:
+  labelTemplates:
+    - |
+      {{'~' if oscillating}}
+  icon: mdi:fan
+  states:
+    off:
+      icon: mdi:fan-off
+
+media_player:
+  icon: mdi:play-circle
+  color: '#AAAAAA'
+  labelTemplates:
+    - ''
+    - ''
+    - '{{ media_title }}'
+    - '{{ media_artist}}'
+  states:
+    playing:
+      color: '#00C937'
+      icon: mdi:play
+    paused:
+      color: '#F9F871'
+      icon: mdi:pause
+    idle:
+      color: '#505050'
+      icon: mdi:stop
+    off:
+      color: '#505050'
+      icon: mdi:television-off
