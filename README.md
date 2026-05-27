@@ -35,6 +35,19 @@ This repository contains the following stow packages:
 - **ssh** - SSH configuration
 - **opendeck** - OpenDeck configuration
 - **omarchy** - Omarchy configuration
+- **scripts** - User scripts in `~/.local/bin/` (e.g. fingerprint toggle)
+
+### System Files (require root — not stow-managed)
+
+Files in `system/` must be installed manually once:
+
+```bash
+bash ~/dotfiles/system/install.sh
+```
+
+This installs:
+- `/usr/local/bin/omarchy-fingerprint-pam-toggle` — PAM helper for fingerprint toggle
+- `/etc/sudoers.d/fingerprint-toggle` — NOPASSWD rule for the helper
 
 ## Stow Commands
 
@@ -134,9 +147,16 @@ dotfiles/
 ├── opendeck/
 │   └── .config/
 │       └── opendeck/
-└── omarchy/
-    └── .config/
-        └── omarchy/
+├── omarchy/
+│   └── .config/
+│       └── omarchy/
+├── scripts/
+│   └── .local/
+│       └── bin/          # stow → ~/.local/bin/
+└── system/               # NOT stow-managed — install with system/install.sh
+    ├── install.sh
+    ├── usr/local/bin/
+    └── etc/sudoers.d/
 ```
 
 ## Notes

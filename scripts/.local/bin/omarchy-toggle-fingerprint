@@ -1,0 +1,21 @@
+#!/bin/bash
+# Hotkey toggle for fingerprint authentication (PAM + hyprlock)
+
+PAM_HELPER="/usr/local/bin/omarchy-fingerprint-pam-toggle"
+HYPRLOCK="$HOME/.config/hypr/hyprlock.conf"
+
+current=$(sudo "$PAM_HELPER" status)
+
+if [[ "$current" == "enabled" ]]; then
+  sudo "$PAM_HELPER" disable
+  # Update hyprlock
+  sed -i 's/placeholder_text = .*/placeholder_text = Enter Password/' "$HYPRLOCK"
+  sed -i 's/fingerprint:enabled = .*/fingerprint:enabled = false/' "$HYPRLOCK"
+  notify-send -i dialog-password "Fingerprint" "Deactivated" -t 3000
+else
+  sudo "$PAM_HELPER" enable
+  # Update hyprlock
+  sed -i 's/placeholder_text = .*/placeholder_text = <span> Enter Password 󰈷 <\/span>/' "$HYPRLOCK"
+  sed -i 's/fingerprint:enabled = .*/fingerprint:enabled = true/' "$HYPRLOCK"
+  notify-send -i dialog-password "Fingerprint" "Activated" -t 3000
+fi

@@ -1,0 +1,53 @@
+#!/bin/bash
+# PAM helper for fingerprint toggle — runs as root via sudoers
+# Only touches pam_fprintd.so lines, nothing else.
+
+SUDO_PAM="/etc/pam.d/sudo"
+POLKIT_PAM="/etc/pam.d/polkit-1"
+
+enable_fingerprint() {
+  if ! grep -q pam_fprintd.so "$SUDO_PAM"; then
+    sed -i '1i auth    sufficient pam_fprintd.so' "$SUDO_PAM"
+  fi
+  if [[ -f "$POLKIT_PAM" ]] && ! grep -q pam_fprintd.so "$POLKIT_PAM"; then
+    sed -i '1i auth      sufficient pam_fprintd.so' "$POLKIT_PAM"
+  elif [[ ! -f "$POLKIT_PAM" ]]; then
+    tee "$POLKIT_PAM" >/dev/null <<'EOF'
+auth      sufficient pam_fprintd.so
+auth      required pam_unix.so
+
+account   required pam_unix.so
+password  required pam_unix.so
+session   required pam_unix.so
+EOF
+  fi
+  echo "enabled"
+}
+
+disable_fingerprint() {
+  # Remove fingerprint lines
+  sed -i '/pam_fprintd\.so/d' "$SUDO_PAM"
+
+  # sudo: system-auth include provides pam_unix.so password auth.
+  # Guard: if somehow the include is gone, add it explicitly.
+  if ! grep -qE 'system-auth|pam_unix\.so' "$SUDO_PAM"; then
+    echo 'auth    required    pam_unix.so' >> "$SUDO_PAM"
+  fi
+
+  if [[ -f "$POLKIT_PAM" ]]; then
+    sed -i '/pam_fprintd\.so/d' "$POLKIT_PAM"
+    # polkit-1: ensure password auth is explicitly present after removal
+    if ! grep -q 'pam_unix\.so' "$POLKIT_PAM"; then
+      sed -i '1i auth      required pam_unix.so' "$POLKIT_PAM"
+    fi
+  fi
+
+  echo "disabled"
+}
+
+case "${1}" in
+  enable)  enable_fingerprint ;;
+  disable) disable_fingerprint ;;
+  status)  grep -q pam_fprintd.so "$SUDO_PAM" && echo "enabled" || echo "disabled" ;;
+  *)       echo "Usage: $0 enable|disable|status"; exit 1 ;;
+esac

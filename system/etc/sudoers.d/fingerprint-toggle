@@ -1,0 +1,1 @@
+quentin ALL=(root) NOPASSWD: /usr/local/bin/omarchy-fingerprint-pam-toggle
