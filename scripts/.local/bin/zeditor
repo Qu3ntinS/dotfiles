@@ -1,1 +1,7 @@
-zed
+#!/usr/bin/env bash
+# Omarchy looks for `zeditor`; Arch/upstream Zed ships `zed`.
+zed_bin="${HOME}/.local/bin/zed"
+if [[ -x $zed_bin ]]; then
+  exec "$zed_bin" "$@"
+fi
+exec zed "$@"
