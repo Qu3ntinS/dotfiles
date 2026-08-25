@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# User wrapper: Cursor CLI (`agent`) as Omarchy default agent.
+# Other agents fall through to the packaged omarchy-agent.
+
+set -euo pipefail
+
+REAL="/usr/share/omarchy/bin/omarchy-agent"
+AGENT_FILE="${HOME}/.config/omarchy/defaults/agent"
+agent=""
+[[ -f $AGENT_FILE ]] && read -r agent <"$AGENT_FILE"
+
+if [[ $agent != agent && $agent != cursor ]]; then
+  exec "$REAL" "$@"
+fi
+
+inline=false
+prompt=""
+while (($#)); do
+  case "$1" in
+    --inline)
+      inline=true
+      shift
+      ;;
+    --pick)
+      shift
+      ;;
+    --prompt)
+      prompt=${2:?--prompt needs a value}
+      shift 2
+      ;;
+    *)
+      exec "$REAL" "$@"
+      ;;
+  esac
+done
+
+if ! command -v agent >/dev/null; then
+  echo "Cursor agent CLI (agent) is not on PATH" >&2
+  exit 1
+fi
+
+[[ ${PWD} == "$HOME" && -d $HOME/Work ]] && cd "$HOME/Work"
+
+if [[ $inline == true ]]; then
+  if [[ -n $prompt ]]; then
+    exec agent "$prompt"
+  fi
+  exec agent
+fi
+
+if [[ -n $prompt ]]; then
+  exec omarchy-launch-tui --app-id=org.omarchy.agent agent "$prompt"
+fi
+exec omarchy-launch-tui --app-id=org.omarchy.agent agent
