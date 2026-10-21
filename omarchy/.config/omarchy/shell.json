@@ -32,7 +32,14 @@
       ],
       "right": [
         {
-          "id": "omarchy.tray"
+          "id": "omarchy.tray",
+          "pinned": [
+            "spotify-client"
+          ],
+          "hidden": []
+        },
+        {
+          "id": "io.github.weedwhitesandwine.plug"
         },
         {
           "id": "omarchy.agents"
@@ -55,7 +62,7 @@
       ]
     },
     "position": "top",
-    "transparent": true
+    "transparent": false
   },
   "idle": {
     "lock": 300,

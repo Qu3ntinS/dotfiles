@@ -15,12 +15,25 @@ profile docked-office {
     output eDP-1 disable
 }
 
+# Laptop open under the center panel. Same outputs as docked-home, so this
+# profile must stay first or kanshi keeps the laptop disabled.
+# eDP-1 is 1920x1200 at scale 1.25 (1536x960). Centered on DP-9 (x=1080, w=1920):
+# 1080 + (1920-1536)/2 = 1272. Top edge sits on the center panel bottom (y=1080).
+# Match MSI panels by serial. Thunderbolt replug renumbers DP-8/9/10 to DP-11+.
+# BC1H174502047 left portrait, BC1H174501262 center, BC1H174502065 right.
+profile docked-home-laptop {
+    output "Microstep MSI MAG 256F BC1H174502047" mode 1920x1080@120 position 0,-420 transform 90
+    output "Microstep MSI MAG 256F BC1H174501262" mode 1920x1080@120 position 1080,0
+    output "Microstep MSI MAG 256F BC1H174502065" mode 1920x1080@120 position 3000,0
+    output eDP-1 enable mode 1920x1200@60 position 1272,1080 scale 1.25
+}
+
 profile docked-home {
     output eDP-1 disable
 
-    output DP-10 mode 1920x1080@120 position 0,-420 transform 90
-    output DP-9  mode 1920x1080@120 position 1080,0
-    output DP-8  mode 1920x1080@120 position 3000,0
+    output "Microstep MSI MAG 256F BC1H174502047" mode 1920x1080@120 position 0,-420 transform 90
+    output "Microstep MSI MAG 256F BC1H174501262" mode 1920x1080@120 position 1080,0
+    output "Microstep MSI MAG 256F BC1H174502065" mode 1920x1080@120 position 3000,0
 }
 
 profile undocked {
